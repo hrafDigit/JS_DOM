@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_DOM - exercice 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-item"><a href="index.html">Exercice 01</a></li>
+                <li class="navbar-item active"><a href="JS_DOM-exo02.html">Exercice 02</a></li>
+                <li class="navbar-item"><a href="JS_DOM-exo03.html">Exercice 03</a></li>
+                <li class="navbar-item"><a href="JS_DOM-exo04.html">Exercice 04</a></li>
+                <li class="navbar-item"><a href="JS_DOM-exo05.html">Exercice 05</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h1>Exercice 2</h1>
+                <h2>Écrivez une fonction JavaScript pour obtenir la valeur des attributs <code><em>href</em></code>, <code><em>hreflang</em></code>, <code><em>rel</em></code>, <code><em>target</em></code> et <code><em>type</em></code> du lien spécifié.</h2>
+            </header>
+            <section>
+                <article>
+                    <p><a href="https://www.w3resource.com/" id="w3r" type="text/html" hreflang="en‐us" rel="nofollow" target="_self">w3resource</a></p>
+                    <button onclick="getAttributes();">Click here to get attributes value</button>
+                    <ul>
+                        <li id="hrefLink"></li>
+                        <li id="typeLink"></li>
+                        <li id="hreflangLink"></li>
+                        <li id="relLink"></li>
+                        <li id="targetLink"></li>
+                    </ul>
+                </article>
+                <div>
+                    <button onclick="getAttributesAlt();">Cliquez ici aussi</button>
+                    <li id="demo"></li>
+                </div>
+                <span>
+                    <p>
+                        <button onclick="getAttributesCorrect();">Correction de l'exercice</button>
+                    </p>
+                </span>
+            </section>
+        </article>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
